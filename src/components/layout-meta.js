@@ -1,9 +1,13 @@
 import Head from 'next/head'
+import packageJson from '../../package.json'
 
 export default function Meta () {
 
     return (
         <Head>
+            <title>
+                {packageJson.description}
+            </title>
             <link
                 rel="apple-touch-icon"
                 sizes="180x180"
@@ -31,12 +35,12 @@ export default function Meta () {
             <meta name="msapplication-TileColor" content="#000000"/>
             <meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
             <meta name="theme-color" content="#000"/>
-            <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
+            {/* <link rel="alternate" type="application/rss+xml" href="/feed.xml"/> */}
             <meta
                 name="description"
-                content="Emkan Records - digital record label from France"
+                content={packageJson.description}
             />
-            {/* <meta property="og:image" content={HOME_OG_IMAGE_URL}/> */}
+            <meta property="og:image" content="/favicon/favicon.ico" />
         </Head>
     )
 

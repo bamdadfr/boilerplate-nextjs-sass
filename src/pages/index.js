@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import AnimationFade from '@/components/animation-fade'
-import LayoutNavActive from '@/components/layout-nav-active'
 
 export default function Index () {
 
@@ -17,11 +16,6 @@ export default function Index () {
                 </h1>
                 <p>
                     paragraph
-                    <p>
-                        <LayoutNavActive href="/">
-                            testtt
-                        </LayoutNavActive>
-                    </p>
                 </p>
             </AnimationFade>
         </>

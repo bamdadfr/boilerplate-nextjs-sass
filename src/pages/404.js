@@ -5,7 +5,7 @@ export default function NotFound () {
     return (
         <AnimationFade>
             <h1>
-                Page Not Found
+                not found
             </h1>
         </AnimationFade>
     )
