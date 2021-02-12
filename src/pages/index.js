@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import AnimationFade from '@/components/animation-fade'
 
-export default function Index () {
+export default function PagesIndex () {
 
     return (
         <>

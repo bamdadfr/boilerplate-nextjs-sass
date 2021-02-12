@@ -1,6 +1,6 @@
 import AnimationFade from '@/components/animation-fade'
 
-export default function NotFound () {
+export default function PagesNotFound () {
 
     return (
         <AnimationFade>
