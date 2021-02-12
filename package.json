@@ -26,7 +26,7 @@
     "react-spring": "^8.0.27"
   },
   "devDependencies": {
-    "@bamdadsabbagh/eslint-config": "^1.5.13",
+    "@bamdadsabbagh/eslint-config": "^1.6.0",
     "sass": "^1.32.6"
   }
 }
