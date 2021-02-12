@@ -1,5 +1,5 @@
-export default function (req, res) {
-
+export default function ApiIndex (req, res) {
+    
     switch (req.method) {
 
         default:
