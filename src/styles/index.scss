@@ -1,0 +1,47 @@
+@import 'src/styles/reset';
+@import 'src/styles/colors';
+
+html {
+  background: $background;
+  color: $primary;
+}
+
+.page {
+  font-family: sans-serif;
+
+  height: 100vh;
+  display: grid;
+  //width: 100%;
+  //justify-content: center;
+  grid-template-areas:
+          "m header"
+          "m nav"
+          "m main"
+          "m footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 20px 1fr 20px;
+}
+
+section {
+  grid-area: m;
+}
+
+header {
+  grid-area: header;
+  background: red;
+}
+
+nav {
+  grid-area: nav;
+  background: green;
+}
+
+main {
+  grid-area: main;
+  background: palegoldenrod;
+}
+
+footer {
+  grid-area: footer;
+  background: blue;
+}
