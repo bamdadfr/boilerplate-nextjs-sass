@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import AnimationFade from '@/components/animation-fade'
 
 export default function PagesIndex () {
 
@@ -10,14 +9,14 @@ export default function PagesIndex () {
                     index
                 </title>
             </Head>
-            <AnimationFade>
+            <>
                 <h1>
                     title
                 </h1>
                 <p>
                     paragraph
                 </p>
-            </AnimationFade>
+            </>
         </>
     )
 

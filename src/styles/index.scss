@@ -1,9 +1,10 @@
 @import 'src/styles/reset';
 @import 'src/styles/colors';
+@import 'src/styles/sizes';
 
 html {
-  background: $background;
-  color: $primary;
+  background: $color-background;
+  color: $color-primary;
 }
 
 .page {
@@ -11,37 +12,31 @@ html {
 
   height: 100vh;
   display: grid;
-  //width: 100%;
-  //justify-content: center;
   grid-template-areas:
           "m header"
           "m nav"
           "m main"
           "m footer";
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 20px 1fr 20px;
-}
+  grid-template-columns: $size-margins 1fr $size-margins;
 
-section {
-  grid-area: m;
-}
+  > header {
+    grid-area: header;
+    background: red;
+  }
 
-header {
-  grid-area: header;
-  background: red;
-}
+  > nav {
+    grid-area: nav;
+    background: green;
+  }
 
-nav {
-  grid-area: nav;
-  background: green;
-}
+  > main {
+    grid-area: main;
+    background: palegoldenrod;
+  }
 
-main {
-  grid-area: main;
-  background: palegoldenrod;
-}
-
-footer {
-  grid-area: footer;
-  background: blue;
+  > footer {
+    grid-area: footer;
+    background: blue;
+  }
 }
