@@ -1,7 +1,7 @@
 {
-  "name": "emkanrecords-www",
-  "version": "1.7.0",
-  "description": "Emkan Records - digital record label from France.",
+  "name": "boilerplate-nextjs",
+  "version": "0.0.0",
+  "description": "boilerplate-nextjs",
   "license": "MIT",
   "author": {
     "name": "Bamdad Sabbagh",
