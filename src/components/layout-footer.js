@@ -4,7 +4,6 @@ export default function LayoutFooter () {
         <footer>
             footer
         </footer>
-
     )
 
 }
