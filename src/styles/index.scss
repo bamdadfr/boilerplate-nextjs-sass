@@ -1,42 +1,43 @@
-@import 'src/styles/reset';
+@import 'sass-reset';
+
 @import 'src/styles/colors';
+
 @import 'src/styles/sizes';
 
 html {
-  background: $color-background;
-  color: $color-primary;
+    background: $color-background;
+    color: $color-primary;
 }
 
 .page {
-  font-family: sans-serif;
+    font-family: sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "m header"
+        "m nav"
+        "m main"
+        "m footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: $size-margins 1fr $size-margins;
 
-  height: 100vh;
-  display: grid;
-  grid-template-areas:
-          "m header"
-          "m nav"
-          "m main"
-          "m footer";
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: $size-margins 1fr $size-margins;
+    > header {
+        grid-area: header;
+        background: red;
+    }
 
-  > header {
-    grid-area: header;
-    background: red;
-  }
+    > nav {
+        grid-area: nav;
+        background: green;
+    }
 
-  > nav {
-    grid-area: nav;
-    background: green;
-  }
+    > main {
+        grid-area: main;
+        background: palegoldenrod;
+    }
 
-  > main {
-    grid-area: main;
-    background: palegoldenrod;
-  }
-
-  > footer {
-    grid-area: footer;
-    background: blue;
-  }
+    > footer {
+        grid-area: footer;
+        background: blue;
+    }
 }
