@@ -1,3 +1,1 @@
-# boilerplate-nextjs
-
-boilerplate for nextjs
+# boilerplate-nextjs-sass
